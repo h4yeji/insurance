@@ -1307,7 +1307,20 @@ progress {
     flex: 0 0 auto;
     width: 41.66666667%;
   }
-  .col-lg-6 .tag-button {
+
+  /* .col-lg-6 .tag-button {
+    flex: 0 0 auto;
+    width: 50%;
+    border: none;
+    border-radius: 6px;
+    padding: 3px 10px;
+    margin: 2px;
+    background: var(--bs-gray-300);
+    color: #000;
+    cursor: pointer;
+  } */
+
+  .tag-button {
     /* flex: 0 0 auto;
     width: 50%; */
     border: none;
@@ -1317,6 +1330,7 @@ progress {
     background: var(--bs-gray-300);
     color: #000;
     cursor: pointer;
+    display: inline-block;
   }
 
   .col-lg-7 {
