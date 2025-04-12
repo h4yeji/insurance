@@ -959,7 +959,7 @@ p {
 
 .content-box-card .main-common-title {
   font-size: 30px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--black);
   line-height: 1.2em;
   margin-bottom: 32px;
@@ -1163,7 +1163,11 @@ p {
 
 .content-box-card .awards-recognitions .awards-item .winner-tag {
   flex: 0 0 auto;
-  width: 140px;
+  width: 250px;
+}
+
+.content-box-card .awards-recognitions .awards-item .winner-tag h4.title {
+  margin-bottom: 5px;
 }
 
 .content-box-card .awards-recognitions .awards-item .winner-tag .title {
