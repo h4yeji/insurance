@@ -450,7 +450,7 @@ p {
   background-color: var(--primary);
   border-radius: 8px;
   padding: 16px 24px;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   color: var(--white);
   line-height: 1.5em;
@@ -505,6 +505,35 @@ p {
 
 .common-button-groups .btn.btn-copy:hover {
   background-color: var(--background);
+}
+.common-button-groups .btn.btn-call .icon {
+  stroke: #1a1f2c;
+  transition: var(--transision);
+}
+
+.common-button-groups .btn.btn-call::before {
+  position: absolute;
+  content: "Copied to clipboard";
+  background-color: var(--black);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--white);
+  border-radius: 5px;
+  padding: 4px 12px;
+  line-height: 14px;
+  white-space: nowrap;
+  top: 394px;
+  left: 27%;
+  transform: translateX(-50%);
+  display: none;
+}
+
+.common-button-groups .btn.btn-call.active::before {
+  display: block !important;
+}
+
+.common-button-groups .btn.btn-call:hover {
+  background-color: var(--dark-theme-black);
 }
 
 .social-media-icon {
