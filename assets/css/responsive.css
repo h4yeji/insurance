@@ -78,6 +78,17 @@
 }
 
 @media (max-width: 1199.98px) {
+  .tag-button {
+    border: none;
+    border-radius: 6px;
+    padding: 3px 10px;
+    margin: 2px;
+    background: var(--bs-gray-300);
+    color: #000;
+    cursor: pointer;
+    display: inline-block;
+  }
+
   .navbar .navbar-main {
     position: fixed;
     top: 0;
