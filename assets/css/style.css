@@ -2146,11 +2146,6 @@ p {
   margin-top: 56px;
 }
 
-.contact-map-area iframe {
-  width: 100% !important;
-  height: 100% !important;
-}
-
 .ajax-response.error {
   margin-top: 20px;
   color: red;

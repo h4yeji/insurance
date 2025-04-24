@@ -1,6 +1,5 @@
 (function ($) {
   "use strict";
-
   // Theme color control js
   $(document).ready(function () {
     const isDarkMode = localStorage.getItem("darkMode") === "true";
@@ -50,6 +49,22 @@
       }, 1000);
     });
   });
+
+  // 내부에서 정의
+  window.goToAboutPage = function () {
+    const age = document.querySelector('input[name="age"]').value;
+    const sex = document.querySelector('select[name="sex"]').value;
+    const height = document.querySelector('input[name="height"]').value;
+    const weight = document.querySelector('input[name="weight"]').value;
+    const budget = document.querySelector('select[name="budget"]').value;
+
+    if (!age || !sex || !height || !weight || !budget) {
+      alert("모든 항목을 입력해주세요!");
+      return;
+    }
+
+    window.location.href = "about.html";
+  };
 
   // 📌 복사 기능: 'Copy Phone' 버튼 따로 연결
   new ClipboardJS(".btn-call");
